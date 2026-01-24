@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Vanesa Ragazza</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans">
+
+<!-- Navbar -->
+<nav class="bg-white/70 backdrop-blur-md sticky top-0 z-100 border-b border-slate-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-xl font-black text-slate-800 tracking-tighter">Portofolio</div>
+    
+    <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-600 uppercase tracking-widest">
+      <a href="#home" class="hover:text-pink-500 transition">Home</a>
+      <a href="#about" class="hover:text-pink-500 transition">About</a>
+      <a href="#projects" class="hover:text-pink-500 transition">Projects</a>
+      <a href="#gallery" class="hover:text-pink-500 transition">Gallery</a>
+      <a href="#contact" class="hover:text-pink-500 transition">Contact</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-slate-800 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+    <a href="#home" class="block text-sm font-bold text-slate-600 uppercase tracking-widest hover:text-pink-500">Home</a>
+    <a href="#about" class="block text-sm font-bold text-slate-600 uppercase tracking-widest hover:text-pink-500">About</a>
+    <a href="#projects" class="block text-sm font-bold text-slate-600 uppercase tracking-widest hover:text-pink-500">Projects</a>
+    <a href="#gallery" class="block text-sm font-bold text-slate-600 uppercase tracking-widest hover:text-pink-500">Gallery</a>
+    <a href="#contac" class="block text-sm font-bold text-slate-600 uppercase tracking-widest hover:text-pink-500">Contact</a>
+  </div>
+</nav>
+<!-- Akhir Navbar -->
+
+    <!-- Hero Section Start -->
+    <section id="home">
+      <div class="min-h-screen flex items-center justify-center px-8 pt-24 md:pt-0">
+        <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-12">
+          <div class="flex-1 text-center md:text-left">
+            <h2 class="text-pink-500 font-semibold tracking-widest uppercase mb-2 animate-bounce">Hello, I am</h2>
+            <h1 class="text-5xl md:text-7xl font-black mb-4">Vanesa <span class="text-transparent bg-clip-text bg-linear-to-r from-pink-500 to-orange-400">Ragazza</span></h1>
+            <p class="text-slate-600 text-md mb-8 leading-relaxed">Mahasiswi semester 2 yang tertarik pada web development dan komunikasi digital, serta percaya bahwa teknologi dan informasi adalah kunci membangun organisasi yang aktif dan kolaboratif.</p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div class="mt-8 border-l-4 border-pink-500 pl-6 py-2">
+  <p class="text-slate-500 italic leading-relaxed">
+    "Aku tidak menunggu siap untuk melangkah, aku melangkah untuk menjadi siap"
+  </p>
+</div>
+  <a href="https://drive.google.com/file/d/1I32r5TNxOYWt16yK-o_K-zpqsqBOHq92/view?usp=sharing" class="px-8 py-3 bg-slate-900 text-white rounded-full font-medium hover:bg-slate-800 transition shadow-lg flex items-center gap-2">
+    <span>Lihat CV</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  </a>
+  <a href="https://github.com/Vanesaragazza" target="_blank" class="px-8 py-3 border-2 border-slate-200 rounded-full font-medium hover:border-slate-900 hover:text-slate-900 transition flex items-center gap-2 text-slate-600">
+    <span>GitHub</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+  </a>
+</div> </div> <div class="relative">
+  <div class="w-64 h-64 md:w-80 md:h-80 bg-linear-to-tr from-pink-500 to-orange-400 rounded-full p-2 rotate-3 hover:rotate-0 transition duration-500 shadow-2xl">
+    <div class="w-full h-full bg-slate-200 rounded-full overflow-hidden border-8 border-white">
+      <img src="my profil.jpeg" alt="Vanesa" class="w-full h-full object-cover">
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About -->
+     <section id="about" class="py-32 bg-slate-50 overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <div class="bg-white p-6 md:p-10 rounded-[50px] shadow-2xl shadow-slate-200/60 border border-white transform transition-all duration-1000 translate-y-20 opacity-0" id="about-card">
+      
+      <div class="p-8 md:p-10 bg-slate-50/50 rounded-[40px] mb-8 border border-slate-100 data-aos="fade-up data-aos-delay="100">
+        <span class="text-pink-500 font-bold tracking-widest text-m uppercase mb-4 block text-center">Personal Profile</span>
+        <p class="text-slate-500 leading-relaxed text-sm text-justify">
+          Mahasiswa aktif semester 2 <span class="text-slate-800 font-semibold">Sistem Informasi Kota Cerdas</span> di Politeknik Negeri Indramayu dengan ketertarikan pada pengelolaan informasi, komunikasi publik, dan pemanfaatan teknologi digital. Memiliki latar belakang SMK Akuntansi serta pengalaman kerja sebagai admin dan customer service, yang membentuk kemampuan analisis, ketelitian, komunikasi, dan pemecahan masalah.
+
+<br> Aktif dalam UKM Kota Pena serta kegiatan edukatif dan sosial, yang melatih keterampilan penyampaian informasi, dokumentasi kegiatan, dan kerja kolaboratif. Saat ini sedang mengembangkan kemampuan di bidang front-end web (HTML, CSS, dan JavaScript) sebagai bagian dari persiapan proyek digital pertama. <br>
+
+Memilih untuk bergabung dengan BEM Kementerian Komunikasi dan Informasi sebagai bentuk pengembangan diri dan langkah keluar dari zona nyaman, dengan harapan dapat berkontribusi dalam pengelolaan informasi, dokumentasi kegiatan, serta penyaluran aspirasi mahasiswa melalui pendekatan teknologi yang selaras dengan bidang studi Sistem Informasi Kota Cerdas.
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 mt-8 pt-8 border-t border-slate-100">
+  
+  <div class="flex items-center gap-3 bg-pink-50 px-5 py-2.5 rounded-full border border-pink-100">
+    <div class="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
+    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Organization:</span>
+    <span class="text-sm font-bold text-slate-600">Anggota aktif Kotak Pena</span>
+  </div>
+
+  <div class="flex items-center gap-3 bg-slate-50 px-5 py-2.5 rounded-full border border-slate-100">
+    <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Mastery:</span>
+    <span class="text-sm font-bold text-slate-600">Analisis, Komunikasi, & Problem Solving</span>
+  </div>
+
+</div>
+    </div>
+   </div>
+</section>
+    <!-- Akhir About -->
+     <!--Animasi about  -->
+     <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Hilangkan class transisi awal
+        entry.target.classList.remove('translate-y-20', 'opacity-0');
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(document.querySelector('#about-card'));
+
+  // Ambil elemen tombol dan menu
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Tambahkan fungsi klik
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden'); // Jika ada 'hidden' hapus, jika tidak ada tambahkan
+});
+
+// Menutup menu otomatis saat salah satu link diklik
+const navLinks = mobileMenu.querySelectorAll('a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+});
+</script>
+
+<!-- Projects start-->
+    <section id="projects">
+<section id="projects" data-aos="fade-up" class="py-32 bg-slate-50" class="py-32 bg-slate-50">
+  <div  data-aos="fade-up" data-aos-delay="200" class="max-w-6xl mx-auto px-6">
+    
+    <div class="text-center mb-20">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-800 mb-4">Featured Projects</h2>
+      <p class="text-slate-500 max-w-2xl mx-auto">Kumpulan Projects yang telah saya selesaikan selama semester satu untuk mengasah skill teknis dan organisasi</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <div class="bg-white rounded-4xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-500 group">
+        <div class="aspect-video bg-slate-200 overflow-hidden">
+          <img src="my.projects/projects.1.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="IBM SkillsBuild">
+        </div>
+        <div class="p-8">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded-full">Certification</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-800 mb-3">IBM SkillsBuild</h3>
+          <p class="text-slate-500 text-sm mb-6 leading-relaxed">Penyelesaian kursus intensif mengenai fundamental teknologi AI, keterampilan praktis di bidang data, dan pemograman untuk persiapan karir digital melalui program kolaborasi antara IBM dan Hacktiv8.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Problem Solving</span>
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Classification Data</span>
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">AI Fundamentals</span>
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Github Pages</span>
+          </div>
+          <a href="https://github.com/Vanesaragazza/AirQuality-Classification" class="inline-flex items-center gap-2 text-pink-500 font-bold text-sm hover:gap-4 transition-all">Lihat Project <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-4xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-500 group">
+        <div class="aspect-video bg-slate-200 overflow-hidden">
+          <img src="my.projects/reporter.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Reporter Kota Pena">
+        </div>
+        <div class="p-8">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 bg-pink-50 text-pink-600 text-[10px] font-bold uppercase rounded-full">Journalism</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-800 mb-3">Proyek media digital Divisi Pers</h3>
+          <p class="text-slate-500 text-sm mb-6 leading-relaxed">Pelaksanaan proyek pertama calon anggota Kotak Pena, bertanggung jawab sebagai reporter lapangan dalam meliput berita.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Public Speaking</span>
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Capcut</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1RSHz6DLbq-Q_MCSzMnRzimPo2JtRH9lX/view?usp=sharing" class="inline-flex items-center gap-2 text-pink-500 font-bold text-sm hover:gap-4 transition-all">Tonton Video <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-4xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-500 group">
+        <div class="aspect-video bg-slate-200 overflow-hidden">
+          <img src="my.projects/projects.3.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Spreadsheet Project">
+        </div>
+        <div class="p-8">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase rounded-full">Productivity</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-800 mb-3">Habit Tracker Spreadsheet</h3>
+          <p class="text-slate-500 text-sm mb-6 leading-relaxed">Sistem pelacakan kebiasaan interaktif yang didesain khusus menggunakan Spreadsheets. Fokus pada estetika visual untuk meningkatkan motivasi dan konsistensi dalam membangun habit produktif selama 21 hari.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Google Spreadsheet</span>
+          </div>
+          <a href="https://docs.google.com/spreadsheets/d/14B1EAaeTIHc7VVUdwuPMzL1QhsWIndOz5TMX7j961-A/edit?usp=sharing" class="inline-flex items-center gap-2 text-pink-500 font-bold text-sm hover:gap-4 transition-all">Buka Spreadsheet <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-4xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-500 group">
+        <div class="aspect-video bg-slate-200 overflow-hidden">
+          <img src="my.projects/web.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Bootstrap Portfolio">
+        </div>
+        <div class="p-8">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase rounded-full">Web Dev</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-800 mb-3">Portfolio v5.0 (Bootstrap)</h3>
+          <p class="text-slate-500 text-sm mb-6 leading-relaxed">Website portfolio pertama yang dibangun menggunakan framework Bootstrap 5 untuk tugas kuliah.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">Bootstrap 5</span>
+            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-lg">HTML/CSS</span>
+          </div>
+          <a href="https://github.com/Vanesaragazza/Vanesaragazza.github.io" class="inline-flex items-center gap-2 text-pink-500 font-bold text-sm hover:gap-4 transition-all">Kunjungi Web <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Project End -->
+
+   <!-- Gallery Start  -->
+    <section data-aos="fade-up" class="py-32 bg-slate-50" id="gallery" class="py-32 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <div data-aos="fade-up" data-aos-delay="200" class="mb-16">
+      <h2 class="text-3xl font-black text-slate-800 text-center">Semester 1 Memories</h2>
+      <p class="text-slate-500 mt-2 text-center"> Sedikit dokumentasi kegiatan dan momen seru selama satu semester di kampus</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/1.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/2.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/3.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/4.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/5.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/6.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/7.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/8.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/9.JPG" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/10.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/11.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+      <div class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+        <img src="Gallery recap/12.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Momen Kuliah">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+      </div>
+  </div>
+</section>
+   <!-- Gallery End  -->
+
+   <!-- Contact start -->
+    <section data-aos="fade-up" class="py-32 bg-slate-50" id="contact" class="py-32 bg-slate-50 overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <div data-aos="fade-up" data-aos-delay="400" class="bg-white p-8 md:p-16 rounded-[50px] shadow-2xl shadow-slate-200/60 border border-white">
+      
+      <div class="text-center mb-12">
+        <span class="text-pink-500 font-bold tracking-widest text-xs uppercase mb-3 block">Get In Touch</span>
+        <h2 class="text-3xl md:text-4xl font-black text-slate-800">Hubungi Saya</h2>
+        <p class="text-slate-500 mt-4">Punya pertanyaan atau ingin berkolaborasi? Silakan kirim pesan di bawah ini.</p>
+      </div>
+
+      <form action="#" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-sm font-bold text-slate-700 ml-2">Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama kamu" 
+              class="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-3xl focus:outline-none focus:ring-2 focus:ring-pink-500/20 focus:border-pink-500 transition-all text-slate-600">
+          </div>
+          
+          <div class="space-y-2">
+            <label class="text-sm font-bold text-slate-700 ml-2">Email</label>
+            <input type="email" placeholder="email@contoh.com" 
+              class="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-3xl focus:outline-none focus:ring-2 focus:ring-pink-500/20 focus:border-pink-500 transition-all text-slate-600">
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-sm font-bold text-slate-700 ml-2">Pesan</label>
+          <textarea rows="4" placeholder="Tulis pesanmu di sini..." 
+            class="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-[30px] focus:outline-none focus:ring-2 focus:ring-pink-500/20 focus:border-pink-500 transition-all text-slate-600 resize-none"></textarea>
+        </div>
+
+        <div class="pt-4">
+          <button type="submit" class="w-full md:w-auto px-12 py-4 bg-slate-900 text-white font-bold rounded-full hover:bg-pink-500 shadow-lg shadow-slate-200 hover:shadow-pink-200 transition-all duration-300 flex items-center justify-center gap-3">
+            Kirim Pesan
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div> </div>
+</section>
+   <!-- Contact End -->
+
+   <!-- Footer Start -->
+    <footer class="bg-slate-950 pt-24 pb-12 text-slate-300">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <div class="flex flex-col md:flex-row justify-between items-center gap-12 mb-20">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-black text-white tracking-tighter mb-4">Vanesa Ragazza</h2>
+        <p class="text-slate-400 text-sm max-w-xs leading-relaxed">
+          Mahasiswa Sistem Informasi Kota Cerdas yang berfokus pada pengembangan teknologi dan kontribusi sosial.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-8 text-xs font-bold uppercase tracking-[0.2em]">
+        <a href="#home" class="text-white hover:text-pink-500 transition-colors">Home</a>
+        <a href="#about" class="text-white hover:text-pink-500 transition-colors">About</a>
+        <a href="#projects" class="text-white hover:text-pink-500 transition-colors">Projects</a>
+        <a href="#gallery" class="text-white hover:text-pink-500 transition-colors">Gallery</a>
+        <a href="#contact" class="text-white hover:text-pink-500 transition-colors">Contact</a>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="https://www.instagram.com/scftimilki?igsh=MXNsZjUwbjJsMmYzcQ==" class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-white hover:bg-pink-500 transition-all duration-300 border border-slate-800">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vanesa-ragazza-7a5b9b366/" class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300 border border-slate-800">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-slate-500 text-[10px] uppercase tracking-widest">
+        © 2026 Crafted with <span class="text-pink-500">❤️</span> by Vanesa Ragazza
+      </p>
+      
+      <div class="flex items-center gap-3 bg-slate-900/50 px-4 py-2 rounded-full border border-slate-800">
+        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]"></span>
+        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">Available for new opportunities</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+   <!-- Footer End -->
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Kecepatan animasi (1 detik)
+    once: true,     // Animasi cuma jalan sekali saat di-scroll
+  });
+</script>
+  </body>
+</html>
